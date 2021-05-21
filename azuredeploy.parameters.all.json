@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": "simpleLinuxVM"
+        },
+        "adminUsername": {
+            "value": "" // TODO: Fill in parameter value
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPasswordOrKey": {
+            "value": "" // TODO: Fill in parameter value
+        },
+        "imageOffer": {
+            "value": "server-2019"
+        },
+        "location": {
+            "value": "" // TODO: Fill in parameter value
+        },
+        "VmSize": {
+            "value": "" // TODO: Fill in parameter value
+        },
+        "existingVirtualNetworkName": {
+            "value": "DB-permitted-VNet"
+        },
+        "existingVirtualNetworkResourceGroup": {
+            "value": "DB-permitted-VNet"
+        },
+        "subnetName": {
+            "value": "DB-permitted-subnet"
+        }
+    }
+}
