@@ -4,15 +4,15 @@
   "parameters": {
     "vmName": {
       "type": "string",
-      "defaultValue": "simpleLinuxVM",
+      "defaultValue": "mydsvm",
       "metadata": {
-        "description": "The name of you Virtual Machine."
+        "description": "The name of you Virtual Machine.  Windows computer name cannot be more than 15 characters long, be entirely numeric, or contain the following characters: ` ~ ! @ # $ % ^ & * ( ) = + _ [ ] { } \\ | ; : . ' \" , < > / ?."
       }
     },
     "adminUsername": {
       "type": "string",
       "metadata": {
-        "description": "Username for the Virtual Machine."
+        "description": "Login name for the Virtual Machine."
       }
     },
     "authenticationType": {
@@ -23,13 +23,13 @@
         "password"
       ],
       "metadata": {
-        "description": "Type of authentication to use on the Virtual Machine. SSH key is recommended."
+        "description": "Type of authentication to use on the Virtual Machine."
       }
     },
     "adminPasswordOrKey": {
       "type": "securestring",
       "metadata": {
-        "description": "SSH Key or password for the Virtual Machine. SSH key is recommended."
+        "description": "SSH Key or password for the Virtual Machine."
       }
     },
     "imageOffer": {
@@ -43,7 +43,7 @@
         "18.04-LTS"
       ],
       "metadata": {
-        "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
+        "description": "The Windows Data Science VM is: server-2019"
       }
     },
     "location": {
